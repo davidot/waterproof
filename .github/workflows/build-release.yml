@@ -70,7 +70,7 @@ jobs:
         uses: actions/github-script@0.9.0
         with:
           script: |
-            const name = context.payload.event.inputs.tag.substring(1);
+            const name = context.payload.inputs.tag.substring(1);
             core.setOutput('name', name)
       - name: Release
         uses: softprops/action-gh-release@v1
