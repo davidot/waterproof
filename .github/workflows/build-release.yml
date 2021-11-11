@@ -49,7 +49,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: '${{github.event.inputs.tag}}'
+          ref: 'develop'
       - name: Cache node modules
         uses: actions/cache@v2
         with:
